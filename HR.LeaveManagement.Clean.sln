@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR.LeaveManagement.Domain",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR.LeaveManagement.Application", "src\Core\HR.LeaveManagement.Application\HR.LeaveManagement.Application.csproj", "{A4A2EE83-B9C1-41DD-ABD7-0AA16AB6FA02}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{6DB51F68-9520-4A0F-9E8C-2B4EDC529962}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR.LeaveManagement.Persistence", "src\Infrastructure\HR.LeaveManagement.Persistence\HR.LeaveManagement.Persistence.csproj", "{892B1B9E-E783-4C1F-A192-07A772790E30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR.LeaveManagement.Infrastructure", "src\Infrastructure\HR.LeaveManagement.Infrastructure\HR.LeaveManagement.Infrastructure.csproj", "{B417D1CE-6225-45D3-95DE-ABA0D71F3826}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,10 +34,21 @@ Global
 		{A4A2EE83-B9C1-41DD-ABD7-0AA16AB6FA02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4A2EE83-B9C1-41DD-ABD7-0AA16AB6FA02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4A2EE83-B9C1-41DD-ABD7-0AA16AB6FA02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{892B1B9E-E783-4C1F-A192-07A772790E30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{892B1B9E-E783-4C1F-A192-07A772790E30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{892B1B9E-E783-4C1F-A192-07A772790E30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{892B1B9E-E783-4C1F-A192-07A772790E30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B417D1CE-6225-45D3-95DE-ABA0D71F3826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B417D1CE-6225-45D3-95DE-ABA0D71F3826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B417D1CE-6225-45D3-95DE-ABA0D71F3826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B417D1CE-6225-45D3-95DE-ABA0D71F3826}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CD6ADC14-AA0F-4961-ADB7-DA84FA7F2121} = {98725C30-60E8-4B7E-BE04-594BD742A126}
 		{FCED0A4B-0E63-4A34-AB35-05ADE624418A} = {CD6ADC14-AA0F-4961-ADB7-DA84FA7F2121}
 		{A4A2EE83-B9C1-41DD-ABD7-0AA16AB6FA02} = {CD6ADC14-AA0F-4961-ADB7-DA84FA7F2121}
+		{6DB51F68-9520-4A0F-9E8C-2B4EDC529962} = {98725C30-60E8-4B7E-BE04-594BD742A126}
+		{892B1B9E-E783-4C1F-A192-07A772790E30} = {6DB51F68-9520-4A0F-9E8C-2B4EDC529962}
+		{B417D1CE-6225-45D3-95DE-ABA0D71F3826} = {6DB51F68-9520-4A0F-9E8C-2B4EDC529962}
 	EndGlobalSection
 EndGlobal
