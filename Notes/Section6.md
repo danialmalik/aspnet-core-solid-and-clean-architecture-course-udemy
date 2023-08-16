@@ -25,3 +25,15 @@ dotnet ef migrations add "Intial Migration" --project src/Infrastructure/HR.Leav
 ```sh
 dotnet ef database update --project src/Infrastructure/HR.LeaveManagement.Persistence --startup-project src/API/HR.LeaveManagement.API
 ```
+
+- Add package for code generation
+
+```sh
+dotnet add src/API/HR.LeaveManagement.API package Microsoft.VisualStudio.Web.CodeGeneration.Design
+```
+
+- Add controllers
+
+```sh
+dotnet aspnet-codegenerator -p src/API/HR.LeaveManagement.API/ controller -outDir src/API/HR.LeaveManagement.API/Controllers -name LeaveTypesController -actions -api
+```
