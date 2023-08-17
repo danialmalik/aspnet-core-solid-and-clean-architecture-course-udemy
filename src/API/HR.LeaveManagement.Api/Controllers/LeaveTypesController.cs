@@ -15,6 +15,7 @@ namespace HR.LeaveManagement.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class LeaveTypesController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -50,7 +51,7 @@ namespace HR.LeaveManagement.Api.Controllers
             var response = await _mediator.Send(leaveType);
             return CreatedAtAction(nameof(Get), new { id = response });
         }
-        
+
         // PUT api/<LeaveTypesController>
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
