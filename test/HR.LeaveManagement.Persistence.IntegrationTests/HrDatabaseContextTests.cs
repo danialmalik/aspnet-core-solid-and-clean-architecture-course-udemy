@@ -52,7 +52,7 @@ namespace HR.LeaveManagement.Persistence.IntegrationTests
             await _hrDatabaseContext.SaveChangesAsync();
 
             // Assert
-            leaveType.LastModifiedDate.ShouldNotBeNull();
+            leaveType.DateModified.ShouldNotBeNull();
         }
     }
 }

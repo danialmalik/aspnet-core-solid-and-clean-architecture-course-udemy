@@ -21,7 +21,7 @@ namespace HR.LeaveManagement.Persistence.Configurations
                     Name = "Vacation",
                     DefaultDays = 10,
                     DateCreated = DateTime.Now,
-                    LastModifiedDate = DateTime.Now
+                    DateModified = DateTime.Now
                 }
             );
 

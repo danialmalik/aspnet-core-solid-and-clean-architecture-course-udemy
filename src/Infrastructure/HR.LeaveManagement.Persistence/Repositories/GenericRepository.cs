@@ -36,9 +36,11 @@ namespace HR.LeaveManagement.Persistence.Repositories
             return await _context.Set<T>().AsNoTracking().ToListAsync();
         }
 
-        public async Task<T?> GetByIdAsync(int id)
+        public async Task<T> GetByIdAsync(int id)
         {
-            return await _context.Set<T>().AsNoTracking().FirstOrDefaultAsync(q=>q.Id == id);
+            return await _context.Set<T>()
+                .AsNoTracking()
+                .FirstOrDefaultAsync(q => q.Id == id);
         }
 
         public async Task UpdateAsync(T entity)
